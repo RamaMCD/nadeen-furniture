@@ -1,0 +1,358 @@
+.schematic {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+/* Dark colors
+.sch-color-0 { stroke: #000000; fill: #000000; opacity: 1; }
+.sch-color-1 { stroke: #0696D7; fill: #0696D7; opacity: 0.8; }
+.sch-color-2 { stroke: #3DDC97; fill: #3DDC97; opacity: 0.8; }
+.sch-color-3 { stroke: #32C8C8; fill: #32C8C8; opacity: 0.8; }
+.sch-color-4 { stroke: #C90D0C; fill: #C90D0C; opacity: 0.8; }
+.sch-color-5 { stroke: #FFBA08; fill: #FFBA08; opacity: 0.8; }
+.sch-color-6 { stroke: #C8C832; fill: #C8C832; opacity: 0.8; }
+.sch-color-7 { stroke: #C8C8C8; fill: #C8C8C8; opacity: 0.8; }
+.sch-color-8 { stroke: #282828; fill: #282828; opacity: 0.71; }
+.sch-color-9 { stroke: #0000FF; fill: #0000FF; opacity: 0.71; }
+.sch-color-10 { stroke: #00FF00; fill: #00FF00; opacity: 0.71; }
+.sch-color-11 { stroke: #00FFFF; fill: #00FFFF; opacity: 0.71; }
+.sch-color-12 { stroke: #FF0000; fill: #FF0000; opacity: 0.8; }
+.sch-color-13 { stroke: #FF00FF; fill: #FF00FF; opacity: 0.8; }
+.sch-color-14 { stroke: #FFCD07; fill: #FFCD07; opacity: 0.8; }
+.sch-color-15 { stroke: #AFD134; fill: #AFD134; opacity: 0.8; }
+.sch-color-16 { stroke: #FFE74C; fill: #FFE74C; opacity: 0.8; }
+.sch-color-17 { stroke: #91D178; fill: #91D178; opacity: 0.8; }
+.sch-color-18 { stroke: #FFDDA1; fill: #FFDDA1; opacity: 0.8; }
+.sch-color-19 { stroke: #5FAD56; fill: #5FAD56; opacity: 0.8; }
+.sch-color-20 { stroke: #00BFB2; fill: #00BFB2; opacity: 0.8; }
+.sch-color-21 { stroke: #65DEF1; fill: #65DEF1; opacity: 0.8; }
+.sch-color-22 { stroke: #C55EA3; fill: #C55EA3; opacity: 0.8; }
+.sch-color-23 { stroke: #F56416; fill: #F56416; opacity: 0.8; }
+.sch-color-24 { stroke: #EEC643; fill: #EEC643; opacity: 0.8; }
+.sch-color-25 { stroke: #5E897C; fill: #5E897C; opacity: 0.8; }
+.sch-color-26 { stroke: #6F45B4; fill: #6F45B4; opacity: 0.8; }
+.sch-color-27 { stroke: #516363; fill: #516363; opacity: 0.8; }
+.sch-color-28 { stroke: #D6A2AD; fill: #D6A2AD; opacity: 0.8; }
+.sch-color-29 { stroke: #EF476F; fill: #EF476F; opacity: 0.8; }
+.sch-color-30 { stroke: #D4DCFF; fill: #D4DCFF; opacity: 0.8; }
+.sch-color-31 { stroke: #AFD134; fill: #AFD134; opacity: 0.8; }
+.sch-color-32 { stroke: #996699; fill: #996699; opacity: 0.78; }
+.sch-color-33 { stroke: #CC9999; fill: #CC9999; opacity: 0.78; }
+.sch-color-34 { stroke: #CC6666; fill: #CC6666; opacity: 0.78; }
+.sch-color-35 { stroke: #660033; fill: #660033; opacity: 0.78; }
+.sch-color-36 { stroke: #663366; fill: #663366; opacity: 0.78; }
+.sch-color-37 { stroke: #996666; fill: #996666; opacity: 0.78; }
+.sch-color-38 { stroke: #336699; fill: #336699; opacity: 0.78; }
+.sch-color-39 { stroke: #339999; fill: #339999; opacity: 0.78; }
+.sch-color-40 { stroke: #CC99CC; fill: #CC99CC; opacity: 0.78; }
+.sch-color-41 { stroke: #FFCCCC; fill: #FFCCCC; opacity: 0.78; }
+.sch-color-42 { stroke: #FF9999; fill: #FF9999; opacity: 0.78; }
+.sch-color-43 { stroke: #990033; fill: #990033; opacity: 0.78; }
+.sch-color-44 { stroke: #996699; fill: #996699; opacity: 0.78; }
+.sch-color-45 { stroke: #CC9999; fill: #CC9999; opacity: 0.78; }
+.sch-color-46 { stroke: #6699CC; fill: #6699CC; opacity: 0.78; }
+.sch-color-47 { stroke: #66CCCC; fill: #66CCCC; opacity: 0.78; }
+.sch-color-48 { stroke: #FBAF5D; fill: #FBAF5D; opacity: 0.78; }
+.sch-color-49 { stroke: #AFD134; fill: #AFD134; opacity: 0.78; }
+.sch-color-50 { stroke: #666666; fill: #666666; opacity: 0.39; }
+.sch-color-51 { stroke: #C8C8C8; fill: #C8C8C8; opacity: 0.8; }
+.sch-color-52 { stroke: #7E7E7E; fill: #7E7E7E; opacity: 0.78; }
+.sch-color-53 { stroke: #969696; fill: #969696; opacity: 0.78; }
+.sch-color-54 { stroke: #969696; fill: #969696; opacity: 0.78; }
+.sch-color-55 { stroke: #969696; fill: #969696; opacity: 0.78; }
+.sch-color-56 { stroke: #646464; fill: #646464; opacity: 0; }
+.sch-color-57 { stroke: #C8C8C8; fill: #C8C8C8; opacity: 0; }
+.sch-color-58 { stroke: #E3E3E3; fill: #E3E3E3; opacity: 0.78; }
+.sch-color-59 { stroke: #D62525; fill: #D62525; opacity: 0.78; }
+.sch-color-60 { stroke: #39D437; fill: #39D437; opacity: 0.78; }
+.sch-color-61 { stroke: #E6E600; fill: #E6E600; opacity: 0.78; }
+.sch-color-62 { stroke: #2C7BCE; fill: #2C7BCE; opacity: 0.78; }
+.sch-color-63 { stroke: #9526DE; fill: #9526DE; opacity: 0.78; }
+*/
+
+.sch-color-0 { stroke: #FFFFFF; fill: #FFFFFF; opacity: 1; }
+.sch-color-1 { stroke: #0696D7; fill: #0696D7; opacity: 0.8; }
+.sch-color-2 { stroke: #0DAB76; fill: #0DAB76; opacity: 0.8; }
+.sch-color-3 { stroke: #32C8C8; fill: #32C8C8; opacity: 0.71; }
+.sch-color-4 { stroke: #C90D0C; fill: #C90D0C; opacity: 0.8; }
+.sch-color-5 { stroke: #FFBA08; fill: #FFBA08; opacity: 0.8; }
+.sch-color-6 { stroke: #C8C832; fill: #C8C832; opacity: 0.73; }
+.sch-color-7 { stroke: #808080; fill: #808080; opacity: 0.73; }
+.sch-color-8 { stroke: #282828; fill: #282828; opacity: 0.71; }
+.sch-color-9 { stroke: #8252C2; fill: #8252C2; opacity: 0.8; }
+.sch-color-10 { stroke: #00FF00; fill: #00FF00; opacity: 0.71; }
+.sch-color-11 { stroke: #00FFFF; fill: #00FFFF; opacity: 0.71; }
+.sch-color-12 { stroke: #FF0000; fill: #FF0000; opacity: 0.71; }
+.sch-color-13 { stroke: #FF00FF; fill: #FF00FF; opacity: 0.71; }
+.sch-color-14 { stroke: #FFCD07; fill: #FFCD07; opacity: 0.8; }
+.sch-color-15 { stroke: #AFD134; fill: #AFD134; opacity: 0.8; }
+.sch-color-16 { stroke: #FFE74C; fill: #FFE74C; opacity: 0.8; }
+.sch-color-17 { stroke: #91D178; fill: #91D178; opacity: 0.8; }
+.sch-color-18 { stroke: #FFDDA1; fill: #FFDDA1; opacity: 0.8; }
+.sch-color-19 { stroke: #5FAD56; fill: #5FAD56; opacity: 0.8; }
+.sch-color-20 { stroke: #00BFB2; fill: #00BFB2; opacity: 0.8; }
+.sch-color-21 { stroke: #65DEF1; fill: #65DEF1; opacity: 0.8; }
+.sch-color-22 { stroke: #C55EA3; fill: #C55EA3; opacity: 0.8; }
+.sch-color-23 { stroke: #F56416; fill: #F56416; opacity: 0.8; }
+.sch-color-24 { stroke: #EEC643; fill: #EEC643; opacity: 0.8; }
+.sch-color-25 { stroke: #5E897C; fill: #5E897C; opacity: 0.8; }
+.sch-color-26 { stroke: #6F45B4; fill: #6F45B4; opacity: 0.8; }
+.sch-color-27 { stroke: #516363; fill: #516363; opacity: 0.8; }
+.sch-color-28 { stroke: #D6A2AD; fill: #D6A2AD; opacity: 0.8; }
+.sch-color-29 { stroke: #EF476F; fill: #EF476F; opacity: 0.8; }
+.sch-color-30 { stroke: #D4DCFF; fill: #D4DCFF; opacity: 0.8; }
+.sch-color-31 { stroke: #AFD134; fill: #AFD134; opacity: 0.8; }
+.sch-color-32 { stroke: #996699; fill: #996699; opacity: 0.78; }
+.sch-color-33 { stroke: #CC9999; fill: #CC9999; opacity: 0.78; }
+.sch-color-34 { stroke: #CC6666; fill: #CC6666; opacity: 0.78; }
+.sch-color-35 { stroke: #660033; fill: #660033; opacity: 0.78; }
+.sch-color-36 { stroke: #663366; fill: #663366; opacity: 0.78; }
+.sch-color-37 { stroke: #996666; fill: #996666; opacity: 0.78; }
+.sch-color-38 { stroke: #336699; fill: #336699; opacity: 0.78; }
+.sch-color-39 { stroke: #339999; fill: #339999; opacity: 0.78; }
+.sch-color-40 { stroke: #CC99CC; fill: #CC99CC; opacity: 0.78; }
+.sch-color-41 { stroke: #FFCCCC; fill: #FFCCCC; opacity: 0.78; }
+.sch-color-42 { stroke: #FF9999; fill: #FF9999; opacity: 0.78; }
+.sch-color-43 { stroke: #990033; fill: #990033; opacity: 0.78; }
+.sch-color-44 { stroke: #996699; fill: #996699; opacity: 0.78; }
+.sch-color-45 { stroke: #CC9999; fill: #CC9999; opacity: 0.78; }
+.sch-color-46 { stroke: #6699CC; fill: #6699CC; opacity: 0.78; }
+.sch-color-47 { stroke: #66CCCC; fill: #66CCCC; opacity: 0.78; }
+.sch-color-48 { stroke: #FBAF5D; fill: #FBAF5D; opacity: 0.78; }
+.sch-color-49 { stroke: #282828; fill: #282828; opacity: 0.8; }
+.sch-color-50 { stroke: #B4B4B4; fill: #B4B4B4; opacity: 0.71; }
+.sch-color-51 { stroke: #C0C0C0; fill: #C0C0C0; opacity: 0.28; }
+.sch-color-52 { stroke: #7E7E7E; fill: #7E7E7E; opacity: 0.78; }
+.sch-color-53 { stroke: #969696; fill: #969696; opacity: 0.78; }
+.sch-color-54 { stroke: #969696; fill: #969696; opacity: 0.78; }
+.sch-color-55 { stroke: #969696; fill: #969696; opacity: 0.78; }
+.sch-color-56 { stroke: #FDC689; fill: #FDC689; opacity: 0.78; }
+.sch-color-57 { stroke: #D9FF3D; fill: #D9FF3D; opacity: 0.78; }
+.sch-color-58 { stroke: #E3E3E3; fill: #E3E3E3; opacity: 0.78; }
+.sch-color-59 { stroke: #D62525; fill: #D62525; opacity: 0.78; }
+.sch-color-60 { stroke: #39D437; fill: #39D437; opacity: 0.78; }
+.sch-color-61 { stroke: #E6E600; fill: #E6E600; opacity: 0.78; }
+.sch-color-62 { stroke: #2C7BCE; fill: #2C7BCE; opacity: 0.78; }
+.sch-color-63 { stroke: #9526DE; fill: #9526DE; opacity: 0.78; }
+
+.sch-shortdash { stroke-dasharray: 1 1;}
+.sch-longdash { stroke-dasharray: 3 1;}
+
+.sch-align-top-left-r0,
+.sch-align-top-left-r90,
+.sch-align-bottom-right-r180,
+.sch-align-bottom-right-r270,
+.sch-align-top-right-mr0,
+.sch-align-bottom-left-mr90,
+.sch-align-bottom-left-mr180,
+.sch-align-top-right-mr270 {
+  alignment-baseline: hanging;
+  text-anchor: start;
+}
+.sch-align-top-center-r0,
+.sch-align-top-center-r90,
+.sch-align-bottom-center-r180,
+.sch-align-bottom-center-r270,
+.sch-align-top-center-mr0,
+.sch-align-bottom-center-mr90,
+.sch-align-bottom-center-mr180,
+.sch-align-top-center-mr270 {
+  alignment-baseline: hanging;
+  text-anchor: middle;
+}
+.sch-align-top-right-r0,
+.sch-align-top-right-r90,
+.sch-align-bottom-left-r180,
+.sch-align-bottom-left-r270,
+.sch-align-top-left-mr0,
+.sch-align-bottom-right-mr90,
+.sch-align-bottom-right-mr180,
+.sch-align-top-left-mr270 {
+  alignment-baseline: hanging;
+  text-anchor: end;
+}
+.sch-align-center-left-r0,
+.sch-align-center-left-r90,
+.sch-align-center-right-r180,
+.sch-align-center-right-r270,
+.sch-align-center-right-mr0,
+.sch-align-center-left-mr90,
+.sch-align-center-left-mr180,
+.sch-align-center-right-mr270 {
+  alignment-baseline: middle;
+  text-anchor: start;
+}
+.sch-align-center-r0,
+.sch-align-center-r90,
+.sch-align-center-r180,
+.sch-align-center-r270,
+.sch-align-center-mr0,
+.sch-align-center-mr90,
+.sch-align-center-mr180,
+.sch-align-center-mr270 {
+  alignment-baseline: middle;
+  text-anchor: middle;
+}
+.sch-align-center-right-r0,
+.sch-align-center-right-r90,
+.sch-align-center-left-r180,
+.sch-align-center-left-r270,
+.sch-align-center-left-mr0,
+.sch-align-center-right-mr90,
+.sch-align-center-right-mr180,
+.sch-align-center-left-mr270 {
+  alignment-baseline: middle;
+  text-anchor: end;
+}
+.sch-align-bottom-left-r0,
+.sch-align-bottom-left-r90,
+.sch-align-top-right-r180,
+.sch-align-top-right-r270,
+.sch-align-bottom-right-mr0,
+.sch-align-top-left-mr90,
+.sch-align-top-left-mr180,
+.sch-align-bottom-right-mr270 {
+  alignment-baseline: bottom;
+  text-anchor: start;
+}
+.sch-align-bottom-center-r0,
+.sch-align-bottom-center-r90,
+.sch-align-top-center-r180,
+.sch-align-top-center-r270,
+.sch-align-bottom-center-mr0,
+.sch-align-top-center-mr90,
+.sch-align-top-center-mr180,
+.sch-align-bottom-center-mr270 {
+  alignment-baseline: bottom;
+  text-anchor: middle;
+}
+.sch-align-bottom-right-r0,
+.sch-align-bottom-right-r90,
+.sch-align-top-left-r180,
+.sch-align-top-left-r270,
+.sch-align-bottom-left-mr0,
+.sch-align-top-right-mr90,
+.sch-align-top-right-mr180,
+.sch-align-bottom-left-mr270 {
+  alignment-baseline: bottom;
+  text-anchor: end;
+}
+
+.sch-wire {
+  stroke-linecap: round;
+  stroke-width: .1524;
+  fill: none;
+}
+
+.sch-circle {
+  fill: none;
+  stroke-width: 1;
+}
+
+.sch-text {
+  stroke-width: 0;
+}
+
+.sch-text-fixed {
+  font-family: "Courier New", "Lucida Console", monospace;
+}
+
+.sch-text-proportional {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sch-text-vector {
+  font-family: "Avant Garde";
+}
+
+.sch-label {
+  stroke-width: 0;
+  font-size: 1.778px;
+  text-anchor: start;
+  alignment-baseline: middle;
+}
+
+.sch-rectangle {
+  stroke-width: 0;
+}
+
+.sch-polygon {
+  stroke-width: 0;
+}
+
+.sch-pin {
+  fill: none;
+  stroke-width: .1524;
+  stroke-linecap: round;
+}
+
+.sch-pin-label-0 {
+  stroke: none;
+  font-size: 1.778px;
+  text-anchor: start;
+  alignment-baseline: middle;
+}
+
+.sch-pin-label-180 {
+  stroke: none;
+  font-size: 1.778px;
+  text-anchor: end;
+  alignment-baseline: middle;
+  transform: scale(-1,-1);
+}
+
+.sch-pin-label-overline {
+  text-decoration: overline;
+}
+
+.sch-align-bottom-center {
+
+}
+
+.sheet-selector {
+  background-color: #f4f5f6;
+  border-right: 1px solid #dfe3e8;
+  overflow: hidden auto; }
+
+.sheet-selector-item {
+  background-color: #f4f5f6;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: default;
+  padding: 8px; }
+
+.sheet-selector-item:hover {
+  border-color: #dfe3e8; }
+
+.sheet-selector-item.selected {
+  background-color: #ffffff;
+  border-color: #5c95da; }
+
+.sheet-selector-sheet {
+  background-color: #ffffff;
+  position: relative; }
+
+.sheet-selector-item.selected > .sheet-selector-sheet {
+  box-shadow: 0px 1px 4px 0px rgba(0, 92, 112, 0.24); }
+
+.sheet-selector-hitarea {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+
+.sheet-selector-label {
+  font-size: 12px;
+  /* 12px = 9pt */
+  margin-top: 8px;
+  text-align: center; }
+
+.svg-schematic {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
