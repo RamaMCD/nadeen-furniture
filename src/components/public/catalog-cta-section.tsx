@@ -32,13 +32,13 @@ export function CatalogCtaSection({
 }: CatalogCtaSectionProps) {
   const t = CONTENT.catalogCta;
   const photos = [
-    { src: catalogFeature ?? "/images/catalog-cta-bg.jpg", alt: "Koleksi Nadeen Furniture 1", landscape: false },
-    { src: catalogFeature2 ?? "/images/hero-living-room.jpg", alt: "Koleksi Nadeen Furniture 2", landscape: false },
-    { src: catalogFeature3 ?? "/images/craftsmanship.jpg", alt: "Koleksi Nadeen Furniture 3", landscape: false },
-    { src: catalogFeature4 ?? "/images/catalog-cta-bg.jpg", alt: "Koleksi Nadeen Furniture 4", landscape: false },
-    { src: catalogFeatureLandscape ?? "/images/hero-living-room.jpg", alt: "Koleksi Nadeen Furniture landscape", landscape: true },
-    { src: catalogFeature5 ?? "/images/craftsmanship.jpg", alt: "Koleksi Nadeen Furniture 5", landscape: false },
-    { src: catalogFeature6 ?? "/images/catalog-cta-bg.jpg", alt: "Koleksi Nadeen Furniture 6", landscape: false },
+    { src: catalogFeature ?? "/images/catalog-cta-bg.jpg", alt: "Nadeen Furniture Collection 1", landscape: false },
+    { src: catalogFeature2 ?? "/images/hero-living-room.jpg", alt: "Nadeen Furniture Collection 2", landscape: false },
+    { src: catalogFeature3 ?? "/images/craftsmanship.jpg", alt: "Nadeen Furniture Collection 3", landscape: false },
+    { src: catalogFeature4 ?? "/images/catalog-cta-bg.jpg", alt: "Nadeen Furniture Collection 4", landscape: false },
+    { src: catalogFeatureLandscape ?? "/images/hero-living-room.jpg", alt: "Nadeen Furniture Collection landscape", landscape: true },
+    { src: catalogFeature5 ?? "/images/craftsmanship.jpg", alt: "Nadeen Furniture Collection 5", landscape: false },
+    { src: catalogFeature6 ?? "/images/catalog-cta-bg.jpg", alt: "Nadeen Furniture Collection 6", landscape: false },
   ];
 
   return (

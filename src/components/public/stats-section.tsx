@@ -4,26 +4,26 @@ const STATS = [
   {
     icon: Award,
     value: "20+",
-    label: "Tahun Pengalaman",
-    description: "Berdiri dan melayani sejak 2005",
+    label: "Years of Heritage",
+    description: "Mastering fine woodcraft since 2005",
   },
   {
     icon: Package,
     value: "500+",
-    label: "Jenis Produk",
-    description: "Tersedia di katalog kami",
+    label: "Catalog Designs",
+    description: "Curated collections ready for your home",
   },
   {
     icon: Users,
-    value: "1.000+",
-    label: "Keluarga Bahagia",
-    description: "Yang sudah mempercayai kami",
+    value: "1,000+",
+    label: "Happy Families",
+    description: "Treasuring Nadeen handcrafted pieces",
   },
   {
     icon: Sparkles,
     value: "100%",
     label: "Solid Wood",
-    description: "Kayu solid pilihan, bukan partikel",
+    description: "Finest natural timbers, zero particle boards",
   },
 ];
 

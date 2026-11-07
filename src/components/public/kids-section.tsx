@@ -60,13 +60,13 @@ export function KidsSection({ statsMain }: KidsSectionProps) {
           className="font-display font-medium text-center mb-4 leading-tight"
           style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)", letterSpacing: "-0.02em", color: COLORS.textOnDark }}
         >
-          Hubungi Kami
+          Contact Us
         </h2>
         <p
           className="text-sm text-center max-w-lg mx-auto mb-16 leading-relaxed"
           style={{ color: COLORS.textOnDarkMuted }}
         >
-          Untuk informasi produk, konsultasi, atau kunjungan, hubungi kami melalui kontak berikut.
+          For product inquiries, custom commissions, or workshop visits, reach out to us through our official channels.
         </p>
 
         {/* Foto utama — 16:9 landscape */}
@@ -78,7 +78,7 @@ export function KidsSection({ statsMain }: KidsSectionProps) {
             <div className="relative overflow-hidden w-full aspect-video">
               <Image
                 src={statsMain ?? "/images/hero-living-room.jpg"}
-                alt="Koleksi furniture Nadeen"
+                alt="Nadeen furniture collection"
                 fill
                 loading="lazy"
                 className="object-cover object-center"

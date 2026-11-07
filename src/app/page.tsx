@@ -19,15 +19,15 @@ import { KidsSection } from "@/components/public/kids-section";
 import { getHomepageImages } from "@/lib/db/homepage-images";
 
 export const metadata: Metadata = {
-  title: "Nadeen Furniture — Furniture Kayu Solid Berkualitas",
+  title: "Nadeen Furniture — Handcrafted Solid Wood Furniture",
   description:
-    "Nadeen Furniture menghadirkan furniture kayu solid berkualitas tinggi yang dibuat dengan keahlian dan penuh cinta.",
+    "Nadeen Furniture delivers timeless, handcrafted solid wood furniture made with exceptional European elegance and dedicated artisan mastery.",
   openGraph: {
-    title: "Nadeen Furniture — Furniture Kayu Solid Berkualitas",
+    title: "Nadeen Furniture — Handcrafted Solid Wood Furniture",
     description:
-      "Nadeen Furniture menghadirkan furniture kayu solid berkualitas tinggi yang dibuat dengan keahlian dan penuh cinta.",
+      "Nadeen Furniture delivers timeless, handcrafted solid wood furniture made with exceptional European elegance and dedicated artisan mastery.",
     type: "website",
-    locale: "id_ID",
+    locale: "en_US",
     siteName: "Nadeen Furniture",
   },
 };

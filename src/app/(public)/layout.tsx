@@ -4,11 +4,11 @@ import { PublicFooter } from "@/components/public/footer";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | PT. Gudang Prima Nusantara",
-    default: "PT. Gudang Prima Nusantara",
+    template: "%s | Nadeen Furniture",
+    default: "Nadeen Furniture — Handcrafted Solid Wood Furniture",
   },
   description:
-    "Solusi distribusi dan pergudangan terpercaya untuk bisnis Anda di Indonesia.",
+    "Explore timeless European-inspired solid wood furniture handcrafted with master artisan dedication.",
 };
 
 /**

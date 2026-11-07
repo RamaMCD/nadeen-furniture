@@ -36,7 +36,7 @@ export async function FeaturedProducts() {
               </span>
             </div>
             <h2 className="font-display text-3xl lg:text-4xl font-medium text-[#F5F0E8] leading-tight">
-              Produk Pilihan
+              Featured Products
             </h2>
           </div>
           <Link
@@ -44,7 +44,7 @@ export async function FeaturedProducts() {
             id="featured-products-view-all"
             className="inline-flex items-center gap-2 text-xs tracking-[0.12em] uppercase text-[#C9A96E] flex-shrink-0 group hover:text-[#E2C992] transition-colors"
           >
-            Lihat Semua
+            View All
             <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -62,7 +62,7 @@ export async function FeaturedProducts() {
             href="/catalog"
             className="inline-flex items-center gap-2 border border-[#2A2A2A] text-[#A8A090] text-xs tracking-[0.12em] uppercase px-8 py-4 hover:border-[#C9A96E]/40 hover:text-[#C9A96E] transition-all duration-300"
           >
-            Jelajahi Seluruh Koleksi
+            Explore Full Collection
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

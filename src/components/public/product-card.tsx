@@ -51,7 +51,7 @@ export function ProductCard({ product }: ProductCardProps) {
           className="flex items-center justify-between w-full text-xs tracking-[0.08em] uppercase border-t pt-4 hover:opacity-70"
           style={{ color: COLORS.textPrimary, borderColor: COLORS.borderMid }}
         >
-          <span>Lihat Detail</span>
+          <span>View Details</span>
           <ArrowRight className="w-3.5 h-3.5" />
         </Link>
       </div>

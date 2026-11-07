@@ -20,15 +20,15 @@ export async function generateMetadata({
   const { id } = await params;
   try {
     const product = await getPublishedProductById(id);
-    if (!product) return { title: "Produk Tidak Ditemukan" };
+    if (!product) return { title: "Product Not Found" };
     return {
       title: `${product.name} — Nadeen Furniture`,
       description:
         product.description ??
-        `Detail produk ${product.name} (${product.product_code}) dari Nadeen Furniture.`,
+        `Product details for ${product.name} (${product.product_code}) from Nadeen Furniture.`,
     };
   } catch {
-    return { title: "Produk" };
+    return { title: "Product" };
   }
 }
 
@@ -50,7 +50,7 @@ export default async function ProductDetailPage({
 
   const categoryName = product.categories?.name ?? "Furniture";
   const whatsappText = encodeURIComponent(
-    `Halo Nadeen Furniture, saya tertarik dengan produk *${product.name}* (Kode: ${product.product_code}). Bisakah saya mendapatkan informasi lebih lanjut?`
+    `Hello Nadeen Furniture, I am interested in *${product.name}* (Code: ${product.product_code}). Could I get more information?`
   );
 
   return (
@@ -87,7 +87,7 @@ export default async function ProductDetailPage({
             className="inline-flex items-center gap-2 text-sm text-[#40566F] hover:text-[#2B3E54] transition-colors mb-8 group font-medium"
           >
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-            Kembali ke Katalog
+            Back to Catalog
           </Link>
 
           {/* Product card */}
@@ -112,7 +112,7 @@ export default async function ProductDetailPage({
                   <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
                     <Package className="w-20 h-20 text-[#7189A5]/40" />
                     <p className="text-sm text-[#7189A5]">
-                      Gambar tidak tersedia
+                      Image unavailable
                     </p>
                   </div>
                 )}
@@ -146,7 +146,7 @@ export default async function ProductDetailPage({
                 {product.description ? (
                   <div className="mb-6">
                     <h2 className="text-xs font-semibold text-[#7189A5] uppercase tracking-[0.1em] mb-3">
-                      Deskripsi Produk
+                      Product Description
                     </h2>
                     <p className="text-[#40566F] text-sm leading-relaxed whitespace-pre-wrap">
                       {product.description}
@@ -158,7 +158,7 @@ export default async function ProductDetailPage({
                 {product.specifications ? (
                   <div className="mb-6">
                     <h2 className="text-xs font-semibold text-[#7189A5] uppercase tracking-[0.1em] mb-3">
-                      Spesifikasi
+                      Specifications
                     </h2>
                     <div className="bg-[#FAF8F4] border border-[#DDD5C8] p-5 text-xs text-[#40566F] font-mono whitespace-pre-wrap leading-relaxed rounded-sm">
                       {product.specifications}
@@ -169,7 +169,7 @@ export default async function ProductDetailPage({
                 {/* No description/specs fallback */}
                 {!product.description && !product.specifications && (
                   <p className="text-sm text-[#7189A5] italic mb-6">
-                    Hubungi kami untuk informasi detail produk ini.
+                    Contact us for detailed information on this piece.
                   </p>
                 )}
 
@@ -179,23 +179,23 @@ export default async function ProductDetailPage({
                 {/* Contact CTAs */}
                 <div className="space-y-3 pt-4 border-t border-[#DDD5C8]">
                   <a
-                    href={`https://wa.me/6282227798410?text=${whatsappText}`}
+                    href={`https://wa.me/6285113072901?text=${whatsappText}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     id="product-detail-whatsapp"
                     className="flex items-center justify-center gap-2.5 w-full bg-[#C5A46D] text-[#FFFFFF] font-semibold py-4 hover:bg-[#40566F] transition-all text-sm tracking-wide rounded-sm shadow-sm"
                   >
                     <MessageCircle className="w-5 h-5" />
-                    Tanya via WhatsApp
+                    Inquire via WhatsApp
                   </a>
                   <a
-                    href="https://wa.me/6282227798410"
+                    href="https://wa.me/6285113072901"
                     target="_blank"
                     rel="noopener noreferrer"
                     id="product-detail-contact"
                     className="flex items-center justify-center gap-2.5 w-full border border-[#DDD5C8] text-[#40566F] font-semibold py-4 hover:bg-[#FAF8F4] transition-colors text-sm rounded-sm"
                   >
-                    Hubungi Nadeen Furniture
+                    Contact Nadeen Furniture
                   </a>
                 </div>
               </div>
@@ -208,7 +208,7 @@ export default async function ProductDetailPage({
               href="/catalog"
               className="text-sm text-[#7189A5] hover:text-[#40566F] transition-colors"
             >
-              ← Lihat produk lainnya di katalog
+              ← View more pieces in our catalog
             </Link>
           </div>
         </div>

@@ -89,7 +89,7 @@ export function CatalogFilters({
             htmlFor="catalog-search-input"
             className="block text-xs font-semibold text-[#7189A5] uppercase tracking-[0.1em] mb-2.5"
           >
-            Cari Produk
+            Search Products
           </label>
           <form onSubmit={handleSearchSubmit} className="flex gap-2">
             <div className="relative flex-1">
@@ -99,7 +99,7 @@ export function CatalogFilters({
                 type="search"
                 name="search"
                 defaultValue={currentSearch}
-                placeholder="Nama atau kode produk…"
+                placeholder="Product name or code..."
                 className="w-full pl-9 pr-3 py-2.5 text-sm border border-[#DDD5C8] rounded-sm focus:outline-none focus:ring-2 focus:ring-[#C5A46D]/20 focus:border-[#C5A46D] transition-all bg-[#FAF8F4] text-[#292725] placeholder:text-[#7189A5]"
               />
             </div>
@@ -107,7 +107,7 @@ export function CatalogFilters({
               type="submit"
               className="px-4 py-2.5 text-xs font-semibold bg-[#40566F] text-[#FFFFFF] rounded-sm hover:bg-[#2B3E54] transition-colors flex-shrink-0 tracking-wide"
             >
-              Cari
+              Search
             </button>
           </form>
         </div>
@@ -115,7 +115,7 @@ export function CatalogFilters({
         {/* Category filter */}
         <div>
           <p className="text-xs font-semibold text-[#7189A5] uppercase tracking-[0.1em] mb-2.5">
-            Kategori
+            Categories
           </p>
           <div className="space-y-0.5">
             <button
@@ -127,7 +127,7 @@ export function CatalogFilters({
                   : "text-[#7189A5] hover:bg-[#EEE9E1] hover:text-[#292725]"
               }`}
             >
-              Semua Kategori
+              All Categories
             </button>
             {categories.map((cat) => (
               <button

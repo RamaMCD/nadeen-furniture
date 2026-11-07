@@ -50,7 +50,7 @@ export function CompanyIntro({ introMain, introLeft, introRight }: CompanyIntroP
           <div className="relative w-full overflow-hidden aspect-video">
             <Image
               src={introMain ?? "/images/hero-living-room.jpg"}
-              alt="Koleksi Nadeen Furniture"
+              alt="Nadeen Furniture Collection"
               fill
               loading="lazy"
               className="object-cover object-center"
@@ -64,7 +64,7 @@ export function CompanyIntro({ introMain, introLeft, introRight }: CompanyIntroP
             <div className="relative overflow-hidden aspect-[4/5]">
               <Image
                 src={introLeft ?? "/images/craftsmanship.jpg"}
-                alt="Pengerjaan Handmade"
+                alt="Handcrafted Workmanship"
                 fill
                 loading="lazy"
                 className="object-cover object-center"
@@ -78,7 +78,7 @@ export function CompanyIntro({ introMain, introLeft, introRight }: CompanyIntroP
             >
               <Image
                 src={introRight ?? "/images/catalog-cta-bg.jpg"}
-                alt="Kualitas Material"
+                alt="Material Quality"
                 fill
                 loading="lazy"
                 className="object-cover object-center"

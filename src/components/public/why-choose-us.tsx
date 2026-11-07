@@ -10,39 +10,39 @@ import {
 const REASONS = [
   {
     icon: Heart,
-    title: "Dibuat dengan Cinta",
+    title: "Crafted with Passion",
     description:
-      "Setiap furniture Nadeen dikerjakan dengan hati oleh pengrajin berpengalaman yang mencintai pekerjaannya.",
+      "Every piece of Nadeen furniture is meticulously crafted by experienced artisans who take immense pride in their work.",
   },
   {
     icon: Shield,
-    title: "Aman untuk Keluarga",
+    title: "Safe for the Whole Family",
     description:
-      "Cat water-based non-toxic, sambungan yang kuat, dan desain ergonomis yang aman untuk anak-anak dan lansia.",
+      "Eco-friendly non-toxic finishes, reinforced joinery, and ergonomic contours designed to be safe for children and elders.",
   },
   {
     icon: Leaf,
-    title: "Ramah Lingkungan",
+    title: "Environmentally Conscious",
     description:
-      "Kayu solid dari sumber berkelanjutan. Kami peduli pada lingkungan agar alam tetap lestari untuk generasi mendatang.",
+      "Sustainably harvested solid timber. We honor natural resources to preserve our environment for generations to come.",
   },
   {
     icon: Ruler,
-    title: "Custom Sesuai Selera",
+    title: "Bespoke Customization",
     description:
-      "Tersedia pilihan ukuran, warna, dan finishing yang bisa disesuaikan dengan kebutuhan dan dimensi ruang Anda.",
+      "Select your preferred dimensions, timber species, and finishes to harmonize flawlessly with your interior space.",
   },
   {
     icon: Headphones,
-    title: "Layanan Personal",
+    title: "Dedicated Personal Care",
     description:
-      "Tim kami siap membantu Anda dari konsultasi desain hingga pengiriman ke rumah dengan layanan yang hangat.",
+      "Our design specialists guide you seamlessly from initial aesthetic consultation all the way to white-glove home delivery.",
   },
   {
     icon: Star,
-    title: "Kualitas Terjamin",
+    title: "Uncompromising Quality",
     description:
-      "Setiap produk melalui quality control ketat sebelum sampai ke tangan Anda — karena Anda layak mendapat yang terbaik.",
+      "Each finished work undergoes exacting quality assessments before delivery — because your home deserves the absolute best.",
   },
 ];
 
@@ -56,17 +56,16 @@ export function WhyChooseUs() {
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="h-px w-8 bg-[#C5A46D]" />
             <span className="text-xs font-semibold text-[#C5A46D] tracking-[0.15em] uppercase">
-              Keunggulan Kami
+              Our Advantages
             </span>
             <span className="h-px w-8 bg-[#C5A46D]" />
           </div>
           <h2 className="font-display text-3xl lg:text-4xl font-medium text-[#292725] leading-tight mb-4">
-            Mengapa Keluarga{" "}
-            <span className="text-[#5B473D]">Memilih Nadeen?</span>
+            Why Discerning Families{" "}
+            <span className="text-[#5B473D]">Choose Nadeen?</span>
           </h2>
           <p className="text-[#7189A5] leading-relaxed">
-            Kami bukan sekadar menjual furniture. Kami menghadirkan kenyamanan,
-            keamanan, dan keindahan yang akan menemani keluarga Anda bertahun-tahun.
+            We craft more than furniture. We bring warmth, timeless serenity, and heirloom-grade artistry designed to enrich your family life for years to come.
           </p>
         </div>
 

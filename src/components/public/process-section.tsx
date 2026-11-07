@@ -24,9 +24,9 @@ interface ProcessSectionProps {
 export function ProcessSection({ processMaterial, processLeft, processCenter, processRight }: ProcessSectionProps) {
   const t = CONTENT.process;
   const detailPhotos = [
-    { src: processLeft ?? "/images/hero-living-room.jpg", alt: "Koleksi furniture" },
-    { src: processCenter ?? "/images/craftsmanship.jpg", alt: "Pengerjaan furniture" },
-    { src: processRight ?? "/images/catalog-cta-bg.jpg", alt: "Detail furniture" },
+    { src: processLeft ?? "/images/hero-living-room.jpg", alt: "Furniture collection" },
+    { src: processCenter ?? "/images/craftsmanship.jpg", alt: "Handcrafted furniture workmanship" },
+    { src: processRight ?? "/images/catalog-cta-bg.jpg", alt: "Furniture details" },
   ];
 
   return (
@@ -58,7 +58,7 @@ export function ProcessSection({ processMaterial, processLeft, processCenter, pr
           <div className="relative w-full overflow-hidden aspect-[4/5] sm:col-start-2 sm:row-start-1">
             <Image
               src={processMaterial ?? "/images/craftsmanship.jpg"}
-              alt="Material kayu solid Nadeen"
+              alt="Nadeen solid wood material"
               fill
               loading="lazy"
               className="object-cover object-center"

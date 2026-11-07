@@ -28,7 +28,7 @@ export function AboutUsSection({ image }: AboutUsSectionProps) {
           <div className="relative mx-auto w-full max-w-sm overflow-hidden aspect-[4/5] sm:ml-auto">
             <Image
               src={image}
-              alt="Pengrajin Nadeen mengerjakan furniture kayu"
+              alt="Nadeen artisans crafting solid wood furniture"
               fill
               loading="lazy"
               className="object-cover object-center"

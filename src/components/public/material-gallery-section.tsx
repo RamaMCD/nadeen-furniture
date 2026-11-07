@@ -7,7 +7,7 @@ interface MaterialGallerySectionProps {
   materialGallery3: string;
 }
 
-const photoLabels = ["Detail pengerjaan kayu", "Koleksi furniture", "Detail material"];
+const photoLabels = ["Woodcraft details", "Furniture collection", "Material details"];
 
 export function MaterialGallerySection({
   materialGallery1,
@@ -17,7 +17,7 @@ export function MaterialGallerySection({
   const photos = [materialGallery1, materialGallery2, materialGallery3];
 
   return (
-    <section className="py-12 lg:py-16" aria-label="Galeri detail material dan furniture">
+    <section className="py-12 lg:py-16" aria-label="Material and furniture details gallery">
       <div className={`${FRAME_GROUP_CLASS} px-6 lg:px-0`}>
         <div className="flex gap-3 overflow-x-auto snap-x snap-mandatory sm:grid sm:grid-cols-3 sm:gap-4 sm:overflow-visible">
           {photos.map((src, index) => (

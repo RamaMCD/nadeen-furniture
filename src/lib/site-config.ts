@@ -126,7 +126,7 @@ export const DEFAULT_IMAGES = {
 export const CONTENT = {
 
   // ── Announcement Bar (pita atas navbar) ──────────────────────────────────
-  announcement: "Furniture kayu solid handmade — konsultasi gratis via WhatsApp",
+  announcement: "Handmade solid wood furniture — free consultation via WhatsApp",
 
   // ── Navbar ───────────────────────────────────────────────────────────────
   brand: "NADEEN",
@@ -136,7 +136,7 @@ export const CONTENT = {
     eyebrow: "",
     title: "NADEEN",
     subtitle: "Premium Art",
-    ctaLabel: "Lihat Koleksi",
+    ctaLabel: "Explore Collection",
     ctaHref: "/catalog",
     tagline: "",
   },
@@ -166,49 +166,49 @@ export const CONTENT = {
   // ── Catalog CTA (Lihat Lebih Dekat) ──────────────────────────────────────
   catalogCta: {
     sectionTitle: "Look Closer",
-    badgeLabel: "Koleksi Terbaik Kami",
+    badgeLabel: "Our Finest Collection",
     productLabel: "New",
-    productName: "Koleksi Nadeen",
-    productSub: "Kayu Jati Solid",
-    ctaLabel: "Lihat Koleksi",
+    productName: "Nadeen Collection",
+    productSub: "Solid Teak Wood",
+    ctaLabel: "Explore Collection",
     browseLabel: "Browse",
   },
 
   // ── Stats/Kids Section ────────────────────────────────────────────────────
   stats: {
-    title: "Pelanggan kami\nada di puncak.",
+    title: "Excellence in\nevery home.",
     subtitle:
-      "Ratusan keluarga Indonesia telah mempercayakan keindahan rumah mereka pada Nadeen. Produk kami bisa dipesan secara online maupun langsung.",
+      "Hundreds of families trust Nadeen for their home elegance. Our pieces can be ordered online or experienced directly at our workshop.",
     stat1Value: "500+",
-    stat1Label: "produk tersedia di katalog",
-    stat2Value: "10+",
-    stat2Label: "tahun pengalaman pengrajin",
-    featureTitle: "Tambahkan sentuhan hangat untuk kenyamanan dan keindahan maksimal",
+    stat1Label: "products available in catalog",
+    stat2Value: "20+",
+    stat2Label: "years of artisan craftsmanship",
+    featureTitle: "Add a warm touch for maximum comfort and lasting beauty",
     featureDesc1:
-      "Ini adalah furniture berkualitas tinggi yang memberikan jaminan ketahanan terbaik.",
+      "Premium furniture designed to provide exceptional durability.",
     featureDesc2:
-      "Furniture kayu solid kami dirancang untuk menemani keluarga Anda selama bertahun-tahun.",
+      "Our solid wood furniture is crafted to accompany your family for generations.",
   },
 
   // ── Customer Reviews ─────────────────────────────────────────────────────
   reviews: {
-    sectionTitle: "Customer Review",
+    sectionTitle: "Customer Reviews",
     items: [
       {
-        title: "Kualitas luar biasa, WOW",
-        body: "Furniture Nadeen benar-benar mengubah tampilan ruang tamu saya. Kayu solid yang digunakan sangat premium dan tahan lama.",
+        title: "Outstanding quality, WOW",
+        body: "Nadeen Furniture completely transformed my living room. The solid wood is remarkably premium and built to last.",
       },
       {
-        title: "Setelah 1 bulan masih sempurna.",
-        body: "Pengiriman cepat, packaging aman, dan kualitas sesuai ekspektasi. Akan pesan lagi.",
+        title: "After 1 month, still flawless.",
+        body: "Fast delivery, secure packaging, and craftsmanship that exceeded expectations. Will definitely order again.",
       },
       {
-        title: "Hemat dengan kualitas terbaik.",
-        body: "Tim Nadeen sangat membantu menemukan pilihan yang sesuai budget tanpa mengorbankan kualitas.",
+        title: "Exceptional value and quality.",
+        body: "The Nadeen team was remarkably helpful in finding the ideal pieces to fit my vision without compromise.",
       },
       {
-        title: "Pengiriman gratis dan cepat.",
-        body: "Pesan pagi, estimasi datang 3-5 hari. Sangat memuaskan dan furniturenya indah.",
+        title: "Seamless and prompt delivery.",
+        body: "Ordered smoothly, arrived right on schedule. Highly satisfying experience and the furniture is breathtaking.",
       },
     ],
   },
@@ -218,28 +218,28 @@ export const CONTENT = {
     brandName: "Nadeen",
     copyright: "Nadeen Furniture. All rights reserved.",
     exploreLinks: [
-      { href: "/catalog", label: "Explore All Product" },
-      { href: "/catalog?cat=ruang-tamu", label: "Ruang Tamu" },
-      { href: "/catalog?cat=kamar-tidur", label: "Kamar Tidur" },
-      { href: "/catalog?cat=ruang-makan", label: "Ruang Makan" },
-      { href: "/catalog?cat=kids", label: "Koleksi Anak" },
-      { href: "/catalog?cat=custom", label: "Custom Order" },
+      { href: "/catalog", label: "Explore All Products" },
+      { href: "/catalog?cat=ruang-tamu", label: "Living Room" },
+      { href: "/catalog?cat=kamar-tidur", label: "Bedroom" },
+      { href: "/catalog?cat=ruang-makan", label: "Dining Room" },
+      { href: "/catalog?cat=kids", label: "Kids Collection" },
+      { href: "/catalog?cat=custom", label: "Custom Orders" },
     ],
     productLinks: [
-      { href: "/catalog", label: "Meja Makan" },
-      { href: "/catalog", label: "Kursi Sofa" },
-      { href: "/catalog", label: "Lemari Pakaian" },
-      { href: "/catalog", label: "Tempat Tidur" },
-      { href: "/catalog", label: "Rak Buku" },
-      { href: "/catalog", label: "Meja Kerja" },
+      { href: "/catalog", label: "Dining Tables" },
+      { href: "/catalog", label: "Sofas & Chairs" },
+      { href: "/catalog", label: "Wardrobes" },
+      { href: "/catalog", label: "Beds" },
+      { href: "/catalog", label: "Bookshelves" },
+      { href: "/catalog", label: "Work Desks" },
     ],
     supportLinks: [
-      { href: "/#contact", label: "Hubungi Kami" },
+      { href: "/#contact", label: "Contact Us" },
       { href: "https://wa.me/6285113072901", label: "WhatsApp" },
-      { href: "/company", label: "Tentang Brand" },
-      { href: "/catalog", label: "Katalog Online" },
-      { href: "/#contact", label: "Custom Order" },
-      { href: "/company#values", label: "Nilai Kami" },
+      { href: "/company", label: "About Our Brand" },
+      { href: "/catalog", label: "Online Catalog" },
+      { href: "/#contact", label: "Custom Commission" },
+      { href: "/company#values", label: "Our Values" },
     ],
   },
 

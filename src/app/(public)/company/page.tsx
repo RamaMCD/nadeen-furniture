@@ -5,62 +5,62 @@ import { ArrowRight, Eye, Target, MessageCircle } from "lucide-react";
 export const metadata: Metadata = {
   title: "Company — Nadeen Furniture",
   description:
-    "Kenali Nadeen Furniture — brand furniture kayu solid Indonesia yang menghadirkan produk berkualitas tinggi dengan penuh keahlian dan cinta.",
+    "Discover Nadeen Furniture — an Indonesian handcrafted solid wood furniture maker delivering premium European-inspired collections with passion and master craftsmanship.",
 };
 
 const TIMELINE = [
   {
-    year: "Awal",
-    title: "Berdiri",
-    desc: "Nadeen Furniture didirikan dengan satu visi: menghadirkan furniture kayu solid berkualitas tinggi yang terjangkau untuk rumah Indonesia.",
+    year: "Inception",
+    title: "Founded",
+    desc: "Nadeen Furniture was founded with a singular purpose: to deliver heirloom-quality solid wood furniture with timeless aesthetic appeal.",
   },
   {
-    year: "Berkembang",
-    title: "Perluasan Koleksi",
-    desc: "Koleksi berkembang meliputi ruang tamu, kamar tidur, ruang makan, hingga furniture anak yang aman dan menyenangkan.",
+    year: "Expansion",
+    title: "Collection Growth",
+    desc: "Our catalog expanded across living rooms, bedrooms, and dining spaces to bespoke children's pieces crafted with safety and warmth.",
   },
   {
-    year: "Inovasi",
-    title: "Cat Water-Based",
-    desc: "Transisi ke cat water-based non-toxic untuk seluruh lini produk — aman untuk keluarga dan ramah lingkungan.",
+    year: "Innovation",
+    title: "Eco-Friendly Finishes",
+    desc: "Pioneered the transition to non-toxic, water-based finishes across our entire product line — safe for families and kind to our planet.",
   },
   {
-    year: "Kini",
-    title: "Tumbuh Bersama",
-    desc: "Terus bertumbuh dengan melayani pelanggan di seluruh Indonesia melalui platform digital dan showroom.",
+    year: "Today",
+    title: "Flourishing Together",
+    desc: "Continuing our heritage of excellence, delivering bespoke handcrafted creations to discerning homes through digital experiences and our workshop.",
   },
 ];
 
 const VALUES = [
   {
     emoji: "🪵",
-    title: "Material Berkualitas",
-    desc: "Hanya kayu solid terpilih — jati, mahoni, trembesi — yang lolos seleksi ketat sebelum masuk ke workshop.",
+    title: "Finest Timber",
+    desc: "Only hand-selected solid hardwoods — teak, mahogany, and suar — pass our rigorous standards before arriving in our workshop.",
   },
   {
     emoji: "🤲",
-    title: "Handcrafted",
-    desc: "Setiap produk dikerjakan secara handmade oleh pengrajin berpengalaman dengan perhatian penuh terhadap detail.",
+    title: "Handcrafted Artistry",
+    desc: "Every creation is hand-formed by generational artisans who pour their dedication into every contour and dovetail joint.",
   },
   {
     emoji: "🌱",
-    title: "Ramah Lingkungan",
-    desc: "Cat water-based bebas bahan kimia berbahaya, aman untuk anak-anak dan lingkungan.",
+    title: "Eco-Conscious",
+    desc: "Utilizing sustainably harvested timbers and non-toxic finishes, preserving the environment for future generations.",
   },
   {
     emoji: "🏠",
-    title: "Untuk Keluarga",
-    desc: "Furniture kami dirancang untuk menemani kehidupan keluarga — kuat, tahan lama, dan indah.",
+    title: "Built for Family Life",
+    desc: "Our furniture is designed to stand the test of time — resilient, enduring, and gracefully aging with your home.",
   },
   {
     emoji: "✨",
-    title: "Finishing Custom",
-    desc: "Tersedia pilihan finishing custom sesuai selera — dari natural wood hingga warna-warna pilihan.",
+    title: "Bespoke Finishing",
+    desc: "Tailored stain and finishing options to complement your interior palette — from warm natural grains to signature hues.",
   },
   {
     emoji: "💬",
-    title: "Layanan Personal",
-    desc: "Tim kami siap membantu Anda menemukan furniture yang tepat untuk setiap ruangan.",
+    title: "Dedicated Service",
+    desc: "Our design team is devoted to helping you curate and customize the ideal pieces for every room in your home.",
   },
 ];
 
@@ -95,8 +95,7 @@ export default function CompanyPage() {
             Nadeen Furniture
           </h1>
           <p className="text-lg text-[#EEE9E1] max-w-2xl leading-relaxed">
-            Furniture kayu solid berkualitas tinggi, dibuat dengan keahlian dan
-            penuh cinta. Setiap potongan kayu adalah sebuah karya.
+            High-grade solid wood furniture, sculpted with master craftsmanship and heartfelt passion. Every piece of timber tells an enduring story.
           </p>
         </div>
       </div>
@@ -109,28 +108,20 @@ export default function CompanyPage() {
               <div className="flex items-center gap-3 mb-5">
                 <span className="h-px w-8 bg-[#C5A46D]" />
                 <span className="text-xs font-semibold text-[#C5A46D] tracking-[0.15em] uppercase">
-                  Tentang Kami
+                  About Us
                 </span>
               </div>
               <h2 className="font-display text-3xl font-medium text-[#292725] mb-5">
-                Siapa Kami?
+                Who We Are
               </h2>
               <p className="text-[#7189A5] leading-relaxed mb-5">
-                Nadeen Furniture adalah brand furniture kayu solid Indonesia yang
-                hadir dengan satu misi: menghadirkan furniture berkualitas tinggi
-                yang terjangkau untuk setiap rumah. Kami percaya bahwa keindahan
-                sebuah rumah dimulai dari furniture yang tepat.
+                Nadeen Furniture is an Indonesian solid wood furniture house inspired by classic European grace. We believe that true home elegance begins with honest materials and dedicated craftsmanship.
               </p>
               <p className="text-[#7189A5] leading-relaxed mb-5">
-                Setiap produk kami dikerjakan secara handmade oleh pengrajin
-                berpengalaman menggunakan kayu solid pilihan. Perhatian kami
-                terhadap detail ada di setiap sambungan, setiap permukaan, setiap
-                sentuhan akhir.
+                Every single piece in our collection is carefully handcrafted by seasoned woodworkers. Our uncompromising attention to detail shines through in every joint, curved contour, and hand-rubbed finish.
               </p>
               <p className="text-[#7189A5] leading-relaxed">
-                Dari ruang tamu hingga kamar anak, dari material hingga finishing
-                — semua dirancang untuk mendukung kehidupan keluarga Anda selama
-                bertahun-tahun.
+                From living rooms to children’s sanctuaries, our furniture is designed to enrich your family life with enduring warmth and timeless prestige.
               </p>
             </div>
 
@@ -138,9 +129,9 @@ export default function CompanyPage() {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { value: "100%", label: "Solid Wood" },
-                { value: "Handmade", label: "Craftmanship" },
-                { value: "Water-Based", label: "Cat Non-Toxic" },
-                { value: "Custom", label: "Pilihan Finishing" },
+                { value: "Handmade", label: "Artisan Craftsmanship" },
+                { value: "Water-Based", label: "Non-Toxic Finishes" },
+                { value: "Bespoke", label: "Custom Tailoring" },
               ].map((item) => (
                 <div
                   key={item.label}
@@ -164,12 +155,12 @@ export default function CompanyPage() {
             <div className="flex items-center justify-center gap-3 mb-5">
               <span className="h-px w-8 bg-[#40566F]" />
               <span className="text-xs font-semibold text-[#40566F] tracking-[0.15em] uppercase">
-                Perjalanan Kami
+                Our Journey
               </span>
               <span className="h-px w-8 bg-[#40566F]" />
             </div>
             <h2 className="font-display text-3xl font-medium text-[#292725]">
-              Sejarah & Perkembangan
+              Heritage & Evolution
             </h2>
           </div>
 
@@ -226,11 +217,11 @@ export default function CompanyPage() {
             <div className="flex items-center justify-center gap-3 mb-5">
               <span className="h-px w-8 bg-[#C5A46D]" />
               <span className="text-xs font-semibold text-[#C5A46D] tracking-[0.15em] uppercase">
-                Arah Kami
+                Our Purpose
               </span>
               <span className="h-px w-8 bg-[#C5A46D]" />
             </div>
-            <h2 className="font-display text-3xl font-medium text-[#292725]">Visi & Misi</h2>
+            <h2 className="font-display text-3xl font-medium text-[#292725]">Vision & Mission</h2>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
@@ -239,11 +230,9 @@ export default function CompanyPage() {
               <div className="absolute top-0 right-0 w-40 h-40 bg-[#C5A46D]/15 rounded-full blur-3xl" />
               <div className="relative z-10">
                 <Eye className="w-10 h-10 mb-5 text-[#DDD5C8]" />
-                <h3 className="text-xl font-semibold text-[#FAF8F4] mb-4">Visi</h3>
+                <h3 className="text-xl font-semibold text-[#FAF8F4] mb-4">Vision</h3>
                 <p className="text-[#EEE9E1] leading-relaxed">
-                  Menjadi brand furniture kayu solid Indonesia yang paling dicintai
-                  — dikenal karena kualitas, keahlian, dan komitmen menghadirkan
-                  keindahan ke setiap rumah di Indonesia.
+                  To be the most admired handcrafted solid wood furniture brand — celebrated globally for authentic artistry, uncompromising quality, and enduring natural elegance.
                 </p>
               </div>
             </div>
@@ -251,14 +240,14 @@ export default function CompanyPage() {
             {/* Mission */}
             <div className="p-10 border border-[#DDD5C8] bg-white rounded-sm">
               <Target className="w-10 h-10 text-[#40566F] mb-5" />
-              <h3 className="text-xl font-semibold text-[#292725] mb-5">Misi</h3>
+              <h3 className="text-xl font-semibold text-[#292725] mb-5">Mission</h3>
               <ul className="space-y-4">
                 {[
-                  "Menghadirkan furniture kayu solid berkualitas tinggi dengan harga yang terjangkau",
-                  "Menggunakan material ramah lingkungan dan cat water-based non-toxic",
-                  "Melatih dan memberdayakan pengrajin lokal berpengalaman",
-                  "Memberikan pilihan kustomisasi yang memudahkan pelanggan",
-                  "Melayani setiap pelanggan dengan sepenuh hati",
+                  "Deliver heirloom-grade solid wood furniture crafted for generations of longevity",
+                  "Utilize sustainably sourced timber and eco-friendly non-toxic finishes",
+                  "Empower and honor generational master woodworkers and artisans",
+                  "Offer flexible bespoke options tailored to client aspirations",
+                  "Serve every home with heartfelt dedication and personal care",
                 ].map((m) => (
                   <li key={m} className="flex items-start gap-3 text-sm text-[#7189A5]">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#40566F] flex-shrink-0 mt-2" />
@@ -278,12 +267,12 @@ export default function CompanyPage() {
             <div className="flex items-center justify-center gap-3 mb-5">
               <span className="h-px w-8 bg-[#40566F]" />
               <span className="text-xs font-semibold text-[#40566F] tracking-[0.15em] uppercase">
-                Nilai Kami
+                Our Values
               </span>
               <span className="h-px w-8 bg-[#40566F]" />
             </div>
             <h2 className="font-display text-3xl font-medium text-[#292725]">
-              Yang Menjadi Fondasi Kami
+              The Pillars of Our Craft
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -307,11 +296,10 @@ export default function CompanyPage() {
       <section className="py-20 border-t border-[#DDD5C8]" style={{ backgroundColor: "#FAF8F4" }}>
         <div className="max-w-3xl mx-auto px-5 sm:px-8 lg:px-12 text-center">
           <h2 className="font-display text-3xl font-medium text-[#292725] mb-4">
-            Tertarik dengan Koleksi Kami?
+            Interested in Our Collections?
           </h2>
           <p className="text-[#7189A5] mb-8 leading-relaxed">
-            Jelajahi katalog produk kami atau hubungi tim Nadeen Furniture untuk
-            konsultasi dan informasi lebih lanjut.
+            Explore our curated catalog or reach out to our artisans for personalized design consultations and custom commissions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -319,18 +307,18 @@ export default function CompanyPage() {
               id="company-cta-catalog"
               className="inline-flex items-center justify-center gap-2 bg-[#40566F] text-[#FAF8F4] font-semibold px-8 py-4 rounded-sm hover:bg-[#2B3E54] transition-all"
             >
-              Lihat Katalog
+              Explore Catalog
               <ArrowRight className="w-4 h-4" />
             </Link>
             <a
-              href="https://wa.me/6282227798410"
+              href="https://wa.me/6285113072901"
               target="_blank"
               rel="noopener noreferrer"
               id="company-cta-contact"
               className="inline-flex items-center justify-center gap-2 border border-[#DDD5C8] text-[#40566F] font-semibold px-8 py-4 rounded-sm hover:bg-[#EEE9E1] hover:border-[#C5A46D]/50 transition-all"
             >
               <MessageCircle className="w-5 h-5" />
-              WhatsApp Kami
+              Chat on WhatsApp
             </a>
           </div>
         </div>

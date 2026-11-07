@@ -8,7 +8,7 @@ import { COLORS } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Product Catalog — Nadeen Furniture",
   description:
-    "Jelajahi koleksi furniture kayu solid berkualitas dari Nadeen Furniture. Filter berdasarkan kategori: ruang tamu, kamar tidur, ruang makan, dan furniture anak.",
+    "Explore our collection of handcrafted solid wood furniture. Filter by category: living room, bedroom, dining space, and bespoke designs.",
 };
 
 const ITEMS_PER_PAGE = 12;
@@ -59,13 +59,13 @@ export default async function CatalogPage({ searchParams }: CatalogPageProps) {
                 <p className="text-sm text-[#7189A5]">
                   {count > 0 ? (
                     <>
-                      Menampilkan{" "}
+                      Showing{" "}
                       <strong className="text-[#292725]">{startItem}–{endItem}</strong>{" "}
-                      dari <strong className="text-[#292725]">{count}</strong>{" "}
-                      produk
+                      of <strong className="text-[#292725]">{count}</strong>{" "}
+                      products
                     </>
                   ) : (
-                    "Tidak ada produk ditemukan"
+                    "No products found"
                   )}
                 </p>
               </div>
@@ -84,19 +84,19 @@ export default async function CatalogPage({ searchParams }: CatalogPageProps) {
                     <Package className="w-10 h-10 text-[#7189A5]" />
                   </div>
                   <h3 className="text-lg font-semibold text-[#292725] mb-2">
-                    Produk Tidak Ditemukan
+                    No Products Found
                   </h3>
                   <p className="text-[#7189A5] max-w-sm text-sm">
                     {search || categoryId
-                      ? "Coba ubah kata kunci pencarian atau pilih kategori lain."
-                      : "Belum ada produk yang dipublikasikan di katalog."}
+                      ? "Try modifying your search query or choosing another category."
+                      : "No products have been published to the catalog yet."}
                   </p>
                   {(search || categoryId) && (
                     <Link
                       href="/catalog"
                       className="mt-5 text-sm font-semibold text-[#40566F] hover:underline"
                     >
-                      Lihat semua produk →
+                      View all products →
                     </Link>
                   )}
                 </div>

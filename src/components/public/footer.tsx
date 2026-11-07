@@ -30,7 +30,7 @@ export function PublicFooter() {
             </ul>
           </div>
           <div>
-            <p className="text-[10px] tracking-widest uppercase mb-5" style={{ color: COLORS.borderDark }}>All Product</p>
+            <p className="text-[10px] tracking-widest uppercase mb-5" style={{ color: COLORS.borderDark }}>All Products</p>
             <ul className="space-y-3">
               {t.productLinks.map(l => (
                 <li key={l.href + l.label}>

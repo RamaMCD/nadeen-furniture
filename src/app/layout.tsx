@@ -13,8 +13,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Warehouse Inventory System",
-  description: "Internal warehouse inventory management",
+  title: "Nadeen Furniture — Handcrafted Solid Wood Furniture",
+  description: "Timeless handcrafted European-style solid wood furniture.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
