@@ -5,19 +5,21 @@
  * Supabase client (SSR). No authentication is required because the
  * `anon_select_published_products` RLS policy (migration 0005) grants the
  * `anon` role read access to published rows.
- *
- * IMPORTANT: Never expose `stock`, `selling_price`, transaction data, or any
- * other internal inventory field through this module — it is for the public
- * catalog only.
  */
 
 import { createClient } from "@/lib/supabase/server";
 
 // ─── Public-safe product type ─────────────────────────────────────────────────
 
+export type SortOption =
+  | "default"
+  | "price-asc"
+  | "price-desc"
+  | "name-asc"
+  | "newest";
+
 /**
- * Subset of product columns that are safe to display to anonymous visitors.
- * Deliberately excludes: stock, selling_price, barcode (internal), updated_at.
+ * Subset of product columns that are safe to display to visitors.
  */
 export interface PublicProduct {
   id: string;
@@ -25,6 +27,7 @@ export interface PublicProduct {
   name: string;
   image_url: string | null;
   category_id: string;
+  selling_price: number;
   description: string | null;
   specifications: string | null;
   created_at: string;
@@ -36,9 +39,10 @@ export interface PublicProduct {
 export interface GetPublicProductsOptions {
   search?: string;
   categoryId?: string;
+  sort?: SortOption;
   /** 1-based page number (default: 1) */
   page?: number;
-  /** Items per page (default: 12) */
+  /** Items per page (default: 24) */
   limit?: number;
 }
 
@@ -51,26 +55,26 @@ export interface GetPublicProductsResult {
 
 // List query: exclude heavy 'specifications' field (loaded only on detail page)
 const PUBLIC_SELECT =
-  "id, product_code, name, image_url, category_id, description, created_at, categories(name)";
+  "id, product_code, name, image_url, category_id, selling_price, description, created_at, categories(name)";
 
 // Detail query: includes all fields
 const PUBLIC_SELECT_DETAIL =
-  "id, product_code, name, image_url, category_id, description, specifications, created_at, categories(name)";
+  "id, product_code, name, image_url, category_id, selling_price, description, specifications, created_at, categories(name)";
 
 // Featured query: minimal fields for homepage display
 const FEATURED_SELECT =
-  "id, product_code, name, image_url, category_id, categories(name)";
+  "id, product_code, name, image_url, category_id, selling_price, categories(name)";
 
 // ─── Queries ──────────────────────────────────────────────────────────────────
 
 /**
- * Paginated list of published products with optional search and category filter.
+ * Paginated list of published products with optional search, category filter, and sorting.
  */
 export async function getPublishedProducts(
   opts: GetPublicProductsOptions = {}
 ): Promise<GetPublicProductsResult> {
   const supabase = await createClient();
-  const { search, categoryId, page = 1, limit = 12 } = opts;
+  const { search, categoryId, sort = "default", page = 1, limit = 24 } = opts;
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let query: any = supabase
@@ -87,12 +91,23 @@ export async function getPublishedProducts(
     query = query.eq("category_id", categoryId);
   }
 
+  if (sort === "price-asc") {
+    query = query.order("selling_price", { ascending: true });
+  } else if (sort === "price-desc") {
+    query = query.order("selling_price", { ascending: false });
+  } else if (sort === "name-asc") {
+    query = query.order("name", { ascending: true });
+  } else if (sort === "newest") {
+    query = query.order("created_at", { ascending: false });
+  } else {
+    // Default sorting
+    query = query.order("name", { ascending: true });
+  }
+
   const from = (page - 1) * limit;
   const to = from + limit - 1;
 
-  const { data, error, count } = (await query
-    .order("name", { ascending: true })
-    .range(from, to)) as {
+  const { data, error, count } = (await query.range(from, to)) as {
     data: PublicProduct[] | null;
     error: { message: string } | null;
     count: number | null;
