@@ -57,7 +57,12 @@ export async function uploadProductImage(
   const supabase = createClient();
 
   const ext = file.name.split(".").pop()?.toLowerCase() ?? "jpg";
-  const path = `${productId}/${Date.now()}.${ext}`;
+  const safeExt = ["jpg", "jpeg", "png", "webp", "avif"].includes(ext) ? ext : "jpg";
+  const uid =
+    typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
+      ? crypto.randomUUID().slice(0, 8)
+      : Math.random().toString(36).slice(2, 10);
+  const path = `${productId}/${Date.now()}-${uid}.${safeExt}`;
 
   const { error } = await supabase.storage
     .from(BUCKET)

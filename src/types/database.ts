@@ -125,6 +125,46 @@ export interface Database {
           }
         ];
       };
+      product_images: {
+        Row: {
+          id: string;
+          product_id: string;
+          image_url: string;
+          storage_path: string | null;
+          alt_text: string;
+          display_order: number;
+          is_primary: boolean;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          product_id: string;
+          image_url: string;
+          storage_path?: string | null;
+          alt_text?: string;
+          display_order?: number;
+          is_primary?: boolean;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          product_id?: string;
+          image_url?: string;
+          storage_path?: string | null;
+          alt_text?: string;
+          display_order?: number;
+          is_primary?: boolean;
+          created_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: "product_images_product_id_fkey";
+            columns: ["product_id"];
+            referencedRelation: "products";
+            referencedColumns: ["id"];
+          }
+        ];
+      };
     };
     Views: Record<string, never>;
     Functions: Record<string, never>;
@@ -139,11 +179,15 @@ export interface Database {
 export type CategoriesTable = Database["public"]["Tables"]["categories"];
 export type ProductsTable = Database["public"]["Tables"]["products"];
 export type TransactionsTable = Database["public"]["Tables"]["transactions"];
+export type ProductImagesTable = Database["public"]["Tables"]["product_images"];
 
 export type Category = CategoriesTable["Row"];
 export type Product = ProductsTable["Row"];
 export type Transaction = TransactionsTable["Row"];
+export type ProductImage = ProductImagesTable["Row"];
 
 export type NewCategory = CategoriesTable["Insert"];
 export type NewProduct = ProductsTable["Insert"];
 export type NewTransaction = TransactionsTable["Insert"];
+export type NewProductImage = ProductImagesTable["Insert"];
+export type ProductImageUpdate = ProductImagesTable["Update"];

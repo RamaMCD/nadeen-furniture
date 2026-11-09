@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import {
   ArrowLeft,
@@ -30,6 +29,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { BarcodeDisplay } from "@/components/products/barcode-display";
 import { ProductFormDialog } from "@/components/products/product-form-dialog";
+import { ProductImagesManager } from "@/components/products/product-images-manager";
 import { ConfirmDialog } from "@/components/shared/confirm-dialog";
 import type { Category } from "@/types/database";
 
@@ -257,28 +257,19 @@ export default function ProductDetailPage() {
 
       {/* Main content */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        {/* Left column: image + barcode */}
+        {/* Left column: images + barcode */}
         <div className="space-y-4">
-          {/* Product image */}
           <Card>
-            <CardContent className="p-3">
-              <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-muted">
-                {product.image_url ? (
-                  <Image
-                    src={product.image_url}
-                    alt={product.name}
-                    fill
-                    className="object-contain p-2"
-                    sizes="(max-width: 1024px) 100vw, 320px"
-                    priority
-                  />
-                ) : (
-                  <div className="flex h-full w-full flex-col items-center justify-center gap-2 text-muted-foreground">
-                    <Package className="h-10 w-10" />
-                    <span className="text-xs">No image</span>
-                  </div>
-                )}
-              </div>
+            <CardHeader className="pb-2">
+              <CardTitle className="text-sm">Product Images</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ProductImagesManager
+                productId={product.id}
+                onPrimaryChange={(imageUrl) =>
+                  setProduct((prev) => (prev ? { ...prev, image_url: imageUrl } : prev))
+                }
+              />
             </CardContent>
           </Card>
 

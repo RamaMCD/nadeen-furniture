@@ -65,6 +65,14 @@ const PUBLIC_SELECT_DETAIL =
 const FEATURED_SELECT =
   "id, product_code, name, image_url, category_id, selling_price, categories(name)";
 
+export interface PublicProductImage {
+  id: string;
+  image_url: string;
+  alt_text: string;
+  display_order: number;
+  is_primary: boolean;
+}
+
 // ─── Queries ──────────────────────────────────────────────────────────────────
 
 /**
@@ -161,4 +169,34 @@ export async function getFeaturedProducts(
 
   if (error) throw new Error(error.message);
   return data ?? [];
+}
+
+/**
+ * Fetch gallery images for a published product (RLS enforces published access for anon).
+ * Returns empty array on error or when no images exist.
+ */
+export async function getPublishedProductImages(
+  productId: string
+): Promise<PublicProductImage[]> {
+  try {
+    const supabase = await createClient();
+    const { data, error } = (await supabase
+      .from("product_images")
+      .select("id, image_url, alt_text, display_order, is_primary")
+      .eq("product_id", productId)
+      .order("display_order", { ascending: true })
+      .order("created_at", { ascending: true })) as unknown as {
+      data: PublicProductImage[] | null;
+      error: { message: string } | null;
+    };
+    if (error) {
+      const msg = error.message || "";
+      if (msg.includes("schema cache") || msg.includes("product_images")) return [];
+      console.warn("[public-products] product images fetch failed:", msg);
+      return [];
+    }
+    return data ?? [];
+  } catch {
+    return [];
+  }
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPublishedProductById } from "@/lib/db/public-products";
+import { getPublishedProductById, getPublishedProductImages } from "@/lib/db/public-products";
 import { CONTENT } from "@/lib/site-config";
 import { ProductDetailClient } from "@/components/public/product-detail-client";
 
@@ -43,6 +43,7 @@ export default async function ProductDetailPage({
     notFound();
   }
 
+  const galleryImages = await getPublishedProductImages(product.id);
   const categoryName = product.categories?.name ?? "Furniture";
 
   // Build WhatsApp URL from site config
@@ -88,6 +89,7 @@ export default async function ProductDetailPage({
         <div className="grid grid-cols-1 lg:grid-cols-[55%_1fr] gap-10 lg:gap-16 xl:gap-20">
           {/* ── LEFT: Image Gallery ──────────────────────────────────────────── */}
           <ProductDetailClient
+            images={galleryImages}
             imageUrl={product.image_url}
             productName={product.name}
           />
