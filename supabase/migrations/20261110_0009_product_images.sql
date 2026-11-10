@@ -48,8 +48,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS product_images_one_primary_per_product_idx
 INSERT INTO public.product_images (product_id, image_url, storage_path, alt_text, display_order, is_primary)
 SELECT
   p.id,
-  p.image_url,
+  btrim(p.image_url),
   NULL,
+  COALESCE(NULLIF(btrim(p.name), ''), ''),
   0,
   true
 FROM public.products p
